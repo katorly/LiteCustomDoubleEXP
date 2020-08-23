@@ -1,0 +1,59 @@
+#---------------------
+#\LiteCustomDoubleEXP/
+#---------------------
+#插件作者:主世界
+#本插件已免费发布并在Gitee上开源
+#注意:本插件在游戏模式为非生存模式的情况下无效
+
+#----------
+#|Settings|
+#----------
+
+#设置掉落经验值的倍数,支持不超过小数点15位后的小数
+more-exp: 2.5
+
+#设置挖掘后能掉落成倍经验值的方块,
+#只能使用扁平化后的全大写ID且必须是本来就能掉落经验值的方块
+blocks:
+  - COAL_ORE
+  - REDSTONE_ORE
+  - GLOWING_REDSTONE_ORE
+  - LAPIS_ORE
+  - QUARTZ_ORE
+  - DIAMOND_ORE
+  - EMERALD_ORE
+
+#插件附加功能:当玩家获得经验加成时,自动向全服播报!在此处设置是否启用该功能
+broadcast: 'true'
+
+#----------
+#|Messages|
+#----------
+#可用变量: <玩家ID> <倍数>
+
+#插件消息前缀
+prefix: '&8&l[&b&lLiteCustomDoubleEXP&8&l] '
+#玩家获得多倍经验的Title标题提示
+get-exp-title: '&b&l<玩家ID>, 恭喜您'
+
+#可用变量: <玩家ID> <倍数> <方块名>
+#玩家挖矿获得多倍经验的Title副标题提示
+ore-exp-subtitle: '&7挖掘了 <方块名> 并获得了 <倍数> 倍的经验!'
+#设置玩家挖矿获得多倍经验时自动向全服播报的文字
+ore-broadcast: '&7&l玩家 <玩家ID> 挖掘了 <方块名> 并获得了 <倍数> 倍的经验!'
+
+#可用变量: <玩家ID> <倍数>
+#玩家通过其它途径获得大于等于0的经验的Title副标题提示
+other-exp-subtitle: '&7获得了 <倍数> 倍的经验!'
+#设置玩家通过其它途径获得大于等于0的经验时自动向全服播报的文字
+other-broadcast: '&7&l玩家 <玩家ID> 获得了 <倍数> 倍的经验!'
+
+#重载插件配置成功
+reload-success: '&7插件配置重载成功!'
+#插件帮助消息
+help-message:
+  - '---------&8&l[&b&lLiteCustomDoubleEXP&8&l]&7&l插件帮助---------'
+  - '&7指令前缀 /litecustomdoubleexp 可简写为 /litedoubleexp 或 /lcdoubleexp'
+  - '&7&l/lcdoubleexp reload &r&7重载插件配置'
+  - '&7&l/lcdoubleexp help &r&7查看插件帮助'
+  - '---------&8&l[&b&lLiteCustomDoubleEXP&8&l]&7&l插件帮助---------'

@@ -1,0 +1,12 @@
+name: LiteCustomDoubleEXP
+version: 1.0
+main: com.gmail.zhushijie.litecustomdoubleexp.LiteCustomDoubleEXP
+authors: [Zhushijie]
+description: Double or even double more the EXPs which players get!
+commands:
+  litecustomdoubleexp:
+    description: Use /lcdoubleexp help instead of /help LiteCustomDoubleEXP!
+    usage: /lcdoubleexp help
+    aliases: [litedoubleexp,lcdoubleexp]
+    permission: litecustomdoubleexp.use
+    permission-message: You don't have permission to perform this command.
